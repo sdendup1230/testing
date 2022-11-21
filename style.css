@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200&display=swap');
+
+#wrapper-con{
+    background-color: #ffffff;
+    width: 600px;
+    height: 500px;
+    padding: 30px;
+}
+.container{
+    background-color: #ffffff;
+    width: 500px;
+    height: 500px;
+    margin-left: 380px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+.head-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+    
+}
+
+form{
+    margin-left: 100px;    
+}
+legend{
+    color: darkgray;
+}
+form input {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 8px 5px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+form input:focus{
+    outline: none !important;
+    border: 2px solid #888;
+}
+.href a {
+  margin-left: 100px;
+      color:#0000ff;
+}
+.btn-con a {
+  padding: 10px 50px 10px 50px;
+  background: dodgerblue;
+  text-decoration: none;
+    border-radius: 20px;
+    position: absolute;
+    margin-top:30px;
+    margin-left: 200px;
+    color: #ffffff;
+}
+.btn-con a:hover{
+    background-color: #0000ff;
+    color: #ffffff;
+}
+/* sonam.html------------------------- */
+
+
+/* html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Amatic SC", cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+} */
+
+/* Container for ALL page content, including header and footer */
+#wrapper {
+    position: relative;
+    min-height: 200vh;
+}
+
+/* Container for page content BETWEEN the header and footer */
+#page-wrapper {
+    padding-bottom: 4%;
+/*     position: absolute;
+    margin-top: 40px; */
+}
+
+header {
+    height: 10vh;
+    background-color: lightblue;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.4);
+}
+
+/* Logo image in the header */
+header img {
+    width: 45px;
+}
+
+header ul {
+    text-align: center;
+    margin-right: 2rem;
+}
+
+header ul li {
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+header ul li:hover,
+li:active {
+    color: deepskyblue;
+}
+
+div.banner {
+    height: 45vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+}
+
+#home-banner {
+    background-image: url("https://thedesuungstore.com/wp-content/uploads/2022/01/Modern_Elegant_Circle_Initials_Logo__3_-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation-name: changeBG;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes changeBG {
+    0% { background-image:url("https://denkarsgetaway.com/wp-content/uploads/2021/12/bhutan.webp"); }
+    
+   50%{ background-image: url("https://desuung.org.bt/wp-content/uploads/2020/11/cropped-desu-2-5.png"); }
+}
+
+#about-banner {
+    background-image: url("https://th.bing.com/th/id/R.fcc378ad609c36facb547117e50006c7?rik=6Q0RPqa3%2bok%2fBw&pid=ImgRaw&r=0");
+}
+
+#services-banner {
+    background-image: url("https://www.dailybhutan.com/pub_files/01010006539510/dessuups-the-guardians-of-peace_6902.jpg");
+}
+
+#contact-banner {
+    background-image: url("https://freerangestock.com/sample/119653/online-shop-contact-.jpg");
+}
+
+/* <h1> element on the Home page banner */
+.banner h1 {
+    margin: 0;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+
+/* <h2> element on the Home page banner only */
+#home-banner h2 {
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+}
+
+
+/* <h2> elements in the page banners */
+.banner h2 {
+    font-size: 60px;
+    margin: 10px 0 0;
+}
+
+/* <h3> elements in the page banners */
+.banner h3 {
+    font-size: 40px;
+    margin-top: -5px;
+}
+
+h2 {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 18px;
+    font-family: "Work Sans", sans-serif;
+}
+
+h4 {
+    font-family: "Work Sans", sans-serif;
+    line-height: 0.5;
+}
+
+
+/* Icons in the Contact page */
+h4::before {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 10px;
+    color: #000000;
+}
+
+h4#email-info::before {
+    content: "\f0e0";
+}
+
+h4#phone-info::before {
+    content: "\f095";
+}
+
+h4#address-info::before {
+    content: "\f3c5";
+}
+
+div.row {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 3% 3% 3%;
+    margin-bottom: 1%;
+}
+
+/* Images on the Home and "What We Do" pages */
+section img {
+    width: 100%;
+    object-fit: contain;
+}
+
+section.text-col {
+    flex: 2 1 0;
+    padding: 2% 3%;
+    font-weight: bold;
+}
+.back-con a {
+   background-color: dodgerblue;
+    color: #ff0000;
+    padding: 10px 40px 10px 40px;
+    border-radius: 20px;
+    margin-left: 100px;
+ }
+section.img-col {
+    flex: 1 1 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* Container for the text in the "About Us" and "Contact Us" pages */
+.text-wrapper {
+    display: grid;
+    grid-template-columns: 1fr min(100ch, 100%) 1fr;
+    padding: 3%;
+}
+.text-wrapper li{
+    list-style: none;
+}
+
+.text-wrapper>* {
+    grid-column: 2;
+}
+.back-con a{
+  padding: 10px 40px 10px 40px;
+    border: none;
+    background-color: dodgerblue;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+.back-con a:hover {
+  background-color: blue;
+    color: #ffffff;
+}
+#wrapper a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #41924B;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer text */
+footer p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#cart{}
+.cart-container{
+    margin-top: 100px;
+    
+}
+table {
+    border-collapse: collapse;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow:visible;
+      
+      
+  }
+  #table{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("https://nationaltoday.com/wp-content/uploads/2020/09/Dot-Day.jpg") 100 round; 
+  }
+  
+  table tr th{
+      border: 1px solid #ccc;
+      
+  }
+  table tr td {
+      border: 1px solid #ccc;
+      padding: 10px 30px 10px 30px;
+    }
+  .Lab-A{
+      color: #ffffff;
+      background: black;
+  }
+  
+  
+  
+  
+  
+
+/* Media queries for mobile view */
+
+@media (max-width: 767.98px) {
+    #header img {
+        width: 50px;
+    }
+    li {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 414px) {
+    .banner h1 {
+        font-size: 2em;
+    }
+    #home-banner h2 {
+        font-size: 1.5em;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .row img {
+        width: 70%;
+    }
+    
+    section {
+      margin-bottom: 5%;
+    }
+    
+    footer p {
+        font-size: 0.75em;
+    }
+}
+
+/* uniform sets------ */
+.uniform {
+    width: 400px; 
+    height: 700px;
+    background-color: lightslategrey;
+    color: rgb(0, 0, 0);  
+    text-align: center;
+    margin: 40px auto;
+    padding: 10px 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin-top: 40px;
+    opacity: 0.7;
+}
+#headSelect{
+    padding: 5px 10px 5px 10px;
+}
+.uniform h1:hover,
+    h1:active{
+   color: #ffffff;
+        cursor: pointer;
+ }
+.uniform h2{
+    font-size: 1.5em;
+}
+.uniform img {
+    width: 300px;    
+}
+
+.uniform label {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+    margin-left: 20px;
+}
+.uniform button {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #4586FF;
+    text-transform: uppercase;
+    margin: 9% auto 6%;
+    display: block;
+    border: none;
+}
+    
+.uniform button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    }
+.uniform input{
+    width: 60px;
+    height: 4px;
+    }
+/* Boots------ */
+.boots {
+    width: 400px; 
+    height: 800px;
+    background-color: lightslategrey;
+    color: rgb(0, 0, 0);  
+    text-align: center;
+    margin: 40px auto;
+    padding: 10px 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.boots h1:hover,
+    h1:active{
+   color: #ffffff;
+        cursor: pointer;
+ }
+
+.boots img {
+    width: 300px;    
+}
+.boots p {
+    color: #ffffff;
+   font-weight: bold;
+    font-size: 1.3em;
+    font-family: sans-serif;
+ }
+
+.boots label {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+    margin-left: 20px;
+}
+.boots button {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #4586FF;
+    text-transform: uppercase;
+    margin: 9% auto 6%;
+    display: block;
+    border: none;
+}
+    
+.boots button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    }
+.boots input{
+    width: 60px;
+    height: 4px;
+    }
+/* shirts------------------------- */
+.shirt {
+    width: 400px; 
+    height: 800px;
+    background-color: lightslategrey;
+    color: rgb(0, 0, 0);  
+    text-align: center;
+    margin: 40px auto;
+    padding: 10px 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.shirt h1:hover,
+    h1:active{
+   color: #ffffff;
+        cursor: pointer;
+ }
+.shirt h2 {
+   font-size: 1em;
+ }
+.shirt img {
+    width: 300px;    
+}
+.shirt p {
+    color: #ffffff;
+   font-weight: bold;
+    font-size: 1em;
+    font-family: sans-serif;
+ }
+
+.shirt label {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+    margin-left: 20px;
+}
+.shirt button {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #4586FF;
+    text-transform: uppercase;
+    margin: 9% auto 6%;
+    display: block;
+    border: none;
+}
+    
+.shirt button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    }
+.shirt input{
+    width: 60px;
+    height: 4px;
+    }
+
+/* cart css//////--------------------- */
+    #cart{
+        width: 600px;
+        height: 600px;
+        border-radius: 20px;
+        box-shadow: 5px gold;
+        padding: 30px;
+        margin-left: 250px;
+        background-image: linear-gradient(to bottom right, yellow, orange);
+        
+       
+    }
+    .cart-container{
+        width: 600px;
+        height: 200px;
+        background-color: #ccc;
+        text-align: center;
+        
+    }
+    .term-con h3{
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+    }
+    .term-con p{
+        display: flex;
+        justify-content: center ;
+        align-items: center; 
+    }
+    .confirm-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .confirm-btn button{
+        padding: 10px 40px 10px 40px;
+        background-color: #4586FF;
+        border: none;
+        border-radius: 20px;
+        color: #ffffff;
+    }
+    .confirm-btn button:hover{
+        background-color: blue;
+        color: #ffffff;
+    }
+    
+#cart-list{
+    height: 50vh;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.card{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 40px #ccc;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, yellow, orange);
+    border-radius: 20px;
+}
+.card:hover{
+    transition: 0.2s ease;
+    transform: scale(1.04);
+    box-shadow: 0px 0px 5px #ccc;
+}
+#cart-list img{
+    border-radius: 20px;
+}
+#cart-list button{
+    border-radius: 20px;
+    background-color: aquamarine;
+    border: none;
+    padding: 5px 20px 5px 20px;
+}
+#cart-list button:hover{
+    background-color: dodgerblue;
+    color: #ffffff;
+
+}
+/* .text-wrapper h3{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+} */
+
+.sonam{
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}

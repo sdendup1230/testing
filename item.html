@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+
+    <!-- Container for ALL webpage content -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header>
+            <img src="https://desuung.org.bt/wp-content/uploads/2020/11/cropped-desu-2-5.png" />
+            <input type="text" placeholder="search items">
+           
+            <ul>
+                <li id="nav-home">Home</li>
+                <li id="nav-about">About Us</li>
+                <li id="nav-services">News/Updates</li>
+                <li id="nav-contact">Contact</li>
+                <li id="nav-cart">Cart </li>
+               
+               
+        </header>
+
+        <!-- Container for page content between the header and footer -->
+        <div id="page-wrapper">
+
+            <!-- Home page -->
+            <div id="home">
+                <div id="home-banner" class="banner">
+<!--                     <h1>Desuup Online Shopping</h1>
+                    <h2>Yonphula Cenetary College</h2> -->
+                </div>
+
+                <div class="row">
+                    <section class="img-col">
+                        <img src="">
+                    </section>
+
+                    <section class="text-col">
+                        <h2>"Get Desuup accessories, Just a Click Away!"</h2><p>&#128512;</p>
+                        <p>"We are the one to whom you can fully trust! Get your product within no time. Get your desired things with low price!"</p>
+                    </section>
+                </div>
+                    <hr/> 
+                    <div class="uniform">
+        
+                        <h1>Dessup Uniform</h1>
+                        <h2>When you put on a uniform, there are certain inhibitions that you accept.</h2>
+                        <img src="https://cf.shopee.vn/file/b34fd09ca3245ccf1e07077993e3a432" />
+                     <h3>Dessup Uniform</h3>
+                     <form>
+                            <label>size:</label>
+                            <select id="uniformSelect">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                            <input type="text" value="Nu.900" id="uniformPrice">
+                           </form>
+                     <button onclick="summitUniform()">Add To Card</button>
+                     <p id="uniformSubmitted"></p>
+                     
+                     
+                     </div>
+                     <hr/>
+                     <div class="boots">
+        
+                        <h1>Magnum Boots</h1>
+                                     <p>"Military personnel use military boots that protect the shank and foot from environmental hazards such as irregular and uneven terrain. Foot health and footwear comfort are crucial for the military readiness of infantry soldiers."</p>
+                       
+                        <img src="https://zemanboots.com/3442/magnum-classic-80-black-professional-military-and-police-boots.jpg" width="200px"/>
+                     <h3>Magnum.100% Waterproof Tactical Boots, Leather Side Zip Military Combat Desert Boots,</h3>
+                     <form>
+                            <label>size:</label>
+                            <select id="bootSelect">
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                            </select>
+                            <input type="text" value="Nu.2500" id="bootPrice">
+                           </form>
+                     <button onclick="summitBoot()">Add To Card</button>
+                     <p id="bootSubmitted"></p>
+                     </div>
+                     <hr/>
+                     <div class="shirt">
+        
+                        <h1>Dessup Shirt</h1>
+                        <h2>We came up with fantastic quality T-shirt at a great price. These days its hard to find the mark of truly authentic quality. Made with 100% USA grown pre-shrunk cotton neck label and side scam printed with desuup logo. This shirt one for the ages-an instant classic.</h2>
+                        <img src="https://scontent.fpbh1-1.fna.fbcdn.net/v/t1.15752-9/310176970_3588769051350784_8937876038889574574_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=X1qEMpLz544AX_WWpdc&_nc_ht=scontent.fpbh1-1.fna&oh=03_AdRiYaebEZ3KsxYOXKZpV4qh-NekQRbYR6Lb0IGdS45pQg&oe=638EECAC" />
+                     <h3>T-shirt</h3>
+                     <form>
+                            <label>Size:</label>
+                            <select id="shirtSelect" >
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                            <input type="text" value="Nu.300" id="shirtPrice">
+                        </form>
+                        <button onclick="summitShirt()">Add To Card</button>
+                        <p id="shirtSubmitted"></p>
+                        
+                        <p id="cartItem"></p>
+                    </div> 
+                    <div id="cart-list">
+                        <div class="card">
+                            <img src="images/314333006_525229022462706_5243803281626944440_n-removebg-preview.png" alt="reflector" width="100">
+                            <h3>Jacket</h3>
+                            <button onclick="summitJacket()">Add To Card</button>
+                        </div>
+                        <div class="card">
+                            <img src="images/314453530_1974155589460531_8608064349434639665_n-removebg-preview.png" alt="sleepingBag" width="100">
+                            <h3>Sleeping Bag</h3>
+                            <button onclick="summitSleeping()">Add To Card</button>
+                        </div>
+                        <div class="card">
+                            <img src="images/310131510_1302081307222354_3922774774278258496_n-removebg-preview.png" alt="desuupBag" width="100">
+                            <h3>Desuup Bag</h3>
+                            <button onclick="summitbag()">Add To Card</button>
+                        </div>
+                        <div class="card">
+                            <img src="images/314490450_1734978236884266_465322032756068705_n-removebg-preview.png" alt="flesJacket" width="100">
+                            <h3>Fles Jacket</h3>
+                            <button onclick="summitfles()">Add To Card</button>
+                        </div>
+                        
+                    </div>
+                     <div class="back-con">
+                        <a href="index.html"><i class="fa-solid fa-circle-arrow-left"></i>Back</a>
+                    </div>
+                     
+                           <hr/>     
+                
+            </div>
+            <!-- End of Home page -->
+
+            <!-- "About Us" page -->
+            <div id="about">
+                <div id="about-banner" class="banner">
+                    <h2>About Us</h2>
+                    
+                </div>
+
+                <div class="text-wrapper">
+                    <h2  style="color:blue;">Who Are We?</h2>
+                    <p>We are team from Yonphula DSP center, two Coder along with one Artrist and three content writer. In total, we are of six members working on supplying Desuup's products. We develop this website, so that one can order his/her desired product through online. No need of visiting Desuung Office you can just order it and ring on us.</p>
+                    
+                     <h3>Coders</h3>
+                     <ul>
+                        <img src="https://scontent.fpbh1-1.fna.fbcdn.net/v/t1.15752-9/314463954_1957539134577782_9001126126031028903_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=7-FYBzbzMJsAX9K-G4r&_nc_ht=scontent.fpbh1-1.fna&oh=03_AdS9oe5xOPUCJ58hF0nfhIvPNb5u1d6KwsgsN8x5gc2Ndg&oe=639046E1" width="100px">
+                         <li>Desuup Sonam Dendup</li>
+                         <img src="https://scontent.fpbh1-1.fna.fbcdn.net/v/t1.15752-9/310175789_557153032914119_2189387340847961370_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=N_7LyhCHeUAAX9I09Sb&tn=fT6cj1ghuhmpPSxj&_nc_ht=scontent.fpbh1-1.fna&oh=03_AdT1U0qfFZHfJdInylZhRMCCRB9uLIQISNqH_g1Ws1Wvfw&oe=63902F83" width="100px">
+                        <li>Desuup Suraj Ghimeray</li>
+                     </ul>
+                     <h3>Artist</h3>
+                   <ul>
+                    <img src="https://scontent.fpbh1-1.fna.fbcdn.net/v/t1.15752-9/314805617_668631687975526_7378598319106469916_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=J4bk8nx_atgAX-kcM1h&_nc_ht=scontent.fpbh1-1.fna&oh=03_AdTcoyss1x56EN3kucXLUAbPa7yoCZtIfxp0dWwRaPPUOA&oe=63902BD9" width="100px">
+                    <li>Desuup Sangay Norbu</li>
+
+                   </ul>
+                   <h3>Content Writer</h3>
+                   <ul>
+                    <img src="https://scontent.fpbh1-1.fna.fbcdn.net/v/t1.15752-9/314487664_1925366711005718_2765857186678799254_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=FuxBbqJbw0oAX-Vp8G7&_nc_ht=scontent.fpbh1-1.fna&oh=03_AdTpbizHG8ahAxZqE1H31daU2sKfbQ27IyYmTkXM6475nw&oe=63904B6E" width="100px">
+                       <li>Desuup Yeshi Dema</li>
+                       <img src="https://scontent.fpbh1-1.fna.fbcdn.net/v/t1.15752-9/312746195_523043683008373_7796345543945450552_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=1uTgpsUGJTQAX8w_dAA&_nc_ht=scontent.fpbh1-1.fna&oh=03_AdQBzzZuseUaOzTY757oQS9JF1yWvLXmIIrjy0-R1B6org&oe=63904E1E" width="100px">
+                       <li>Desuup Passang Dorji</li>
+                       <img src="https://th.bing.com/th/id/OIP.v3OSa64FZ5vaG4PsbBSguQHaIE?pid=ImgDet&w=2258&h=2462&rs=1" width="100px">
+                       <li>Desuup Kinzang Namgyel</li>
+
+
+                   </ul>
+                </div>
+            </div>
+            <!-- End of "About Us" page -->
+
+            <!-- "What We Do" page -->
+            <div id="services">
+                <div id="services-banner" class="banner">
+                    <h2>New Arriving stocks!</h2>
+                    
+                </div>
+
+                <!-- First row with the text on the left, image on the right -->
+                <div class="row">
+                    <section class="text-col">
+                        <h2>Magnam Boots</h2>
+                        <p>On 25th of November we are going to recieve new stocks of magnam boots (500 pairs) with high quility which we have ordered from USA. So make your ordered fast and get your desired products with lesser price!</p>
+                    </section>
+                    <section class="img-col">
+                        <img src="https://zemanboots.com/3442/magnum-classic-80-black-professional-military-and-police-boots.jpg">
+                    </section>
+                </div>
+
+                <!-- Second row with the text on the left, image on the right -->
+                <div class="row">
+                    <section class="text-col">
+                        <h2>Uniform</h2>
+                        <p>In addition we also have Uniform(1000 sets), which we have ordered from USA. This time its of high quality with more geranty. Serious buyer may order to get desired uniform sets!</p>
+                    </section>
+                    <section class="img-col">
+                        <img src="https://i1.sndcdn.com/artworks-5zJIINP9TYDUiEoN-V9Sv3g-t500x500.jpg">
+                    </section>
+                </div>                
+               </div>
+            <!-- End of "What We Do" page -->
+
+            <!-- Contact page -->
+            <div id="contact">
+                <div id="contact-banner" class="banner">
+                   
+                    
+                </div>
+
+                <div class="text-wrapper">
+                    <h2>Want to get in touch?</h2>
+                    <p>Feel free to contact us for any questions or inquiries.</p>
+                    <h4>Name</h4> 
+                    <h4 id="email-info">sdendupdrukpa@gmail.com</h4>
+                    <h4 id="phone-info">+97517686775</h4>
+                    <h4 id="address-info">Yonphula, Trashigang, Bhutan</h4>
+                   
+                </div>
+            </div>
+
+            <!-- CART PAGE -->
+            <div id="cart">
+                <div class="cart-container">
+                    <h1>Selected Items:</h1>
+                    <br />
+                    <h4 id="selectedUniform"></h4>
+                    <h4 id="selectedBoot"></h4>
+                    <h4 id="selectedShirt"></h4>
+                </div>
+                <div class="term-con">
+                    <h3><i class="fa-solid fa-triangle-exclamation"></i>Term And Policy</h3>
+                    <p><i class="fa-solid fa-lightbulb"></i>Confirmed items cannot be returned back!</p>
+                </div>
+                <table id="table">
+                    
+    
+                    <tr>
+                    
+                        <th>Sl.No</th>
+                        <th>Name</th>
+                        <th>DID</th>
+                        <th>DOB</th>
+                        <th>CID</th>
+                        <th>Contact no.</th>
+                    
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Sonam Dendup</td>
+                        <td>Ds(49)22-27001</td>
+                        <td>27/10/1998</td>
+                        <td>11102006498</td>
+                        <td>17683647</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Surash Gyimrey</td>
+                        <td>Ds(46)21-23261</td>
+                        <td>26/06/2002</td>
+                        <td>11103002021</td>
+                        <td>17833212</td>
+                    </tr>
+                     <tr>
+                        <td>3</td>
+                        <td>Sangay Norbu</td>
+                        <td>Ds(46)21-23554</td>
+                        <td>25/03/2001</td>
+                        <td>11604001642</td>
+                         <td>17613080</td>
+                    </tr>
+                        <td>4</td>
+                        <td>Jasuda Rai</td>
+                        <td>Ds(45)21-20160</td>
+                        <td>28/05/2000</td>
+                        <td>11203001649</td>
+                    <td>17575051</td>
+                    </tr>
+                    </tr>
+                        <td>5</td>
+                        <td>Bhawana Devi Sharma</td>
+                        <td>Ds(50)22-28354</td>
+                        <td>05/01/2000</td>
+                        <td>10205007813</td>
+                    <td>77932043</td>
+                    </tr>
+                    
+                </table>
+                <div class="confirm-btn">
+                    <button onclick="confirm()">CONFIRM</button>
+                </div>
+                <div class="sonam">
+                    
+                </div>
+
+               
+            </div>
+            <!-- End of Contact page -->
+            
+
+            
+            
+
+            
+
+                  
+        </div> <!-- End tag for <div class="page-wrapper"> -->
+
+        <!-- Footer -->
+        <footer>
+            <p>YonphulaCenter.org.bt @Copyrite</p>
+        </footer>
+
+    </div> <!-- End tag for <div id="wrapper"> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
